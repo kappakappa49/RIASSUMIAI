@@ -49,11 +49,10 @@ export default function App() {
     setError(null);
     try {
       // 1. Upload to backend for text extraction
-      const uploadRes = await fetch(`${(import.meta as any).env?.VITE_API_URL}/upload`, {
+      const formData = new FormData();
       formData.append('file', file);
 
-      // Using the Node backend for extraction (compatible with the current environment)
-      const uploadRes = await fetch('/api/upload', {
+      const uploadRes = await fetch(`${(import.meta as any).env?.VITE_API_URL}/upload`, {
         method: 'POST',
         body: formData,
       });
@@ -418,3 +417,4 @@ export default function App() {
     </div>
   );
 }
+
