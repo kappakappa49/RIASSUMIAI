@@ -48,3 +48,4 @@ UniSummary Pro è una piattaforma avanzata progettata per studenti universitari 
 - **Frontend:** React, Tailwind CSS, Lucide React, Framer Motion, Mermaid.
 - **Backend:** FastAPI, PyMuPDF (estrazione PDF), Python-Docx (estrazione Word).
 - **AI:** Google Gemini 1.5 Pro (Generazione di contenuti accademici).
+
